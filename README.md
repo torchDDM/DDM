@@ -16,8 +16,8 @@ Dataset
 * In our experiment, we resampled all MRI scans with a voxel spacing of 1.5 x 1.5 x 3.15 mm, and saved the data with .mat.
 * Examples of the data we used can be downloaded at [here](https://drive.google.com/drive/folders/1G0i9YI0qY3GXq4tUqFn6OeQKvMuRX69q?usp=sharing).
    * Copy downloaded directory of "ACDC_dataset" to './data'.
-   * The data in the directory "data_ED_ES" have the 3D MR scans at the end diastolic and at the end systolic phases, and their corresponding segmentation labels.
-   * The data in the directory "data_ED2ES" have the 4D MR scans from the end diastolic to the end systolic phases, which is used in the test stage.
+   * The data in the directory "data_ED_ES" have 3D MR scans at the end diastolic and at the end systolic phases, and their corresponding segmentation labels.
+   * The data in the directory "data_ED2ES" have 4D MR scans from the end diastolic to the end systolic phases, which is used in the test stage.
 
 Training
 ===============
