@@ -14,8 +14,8 @@ Dataset
 * In our experiment, we used 4D cardiac MR scans provided by the Automated Cardiac Diagnosis Challenge (ACDC). 
 * You can download the data at [ACDC](https://acdc.creatis.insa-lyon.fr/description/databases.html).
 * In our experiment, we resampled all MRI scans with a voxel spacing of 1.5 x 1.5 x 3.15 mm, and saved the data with .mat.
-  * Examples of the data we used can be downloaded at [here](https://drive.google.com/drive/folders/1G0i9YI0qY3GXq4tUqFn6OeQKvMuRX69q?usp=sharing).
-  * Copy downloaded directory of "ACDC_dataset" to './data'.
+* Examples of the data we used can be downloaded at [here](https://drive.google.com/drive/folders/1G0i9YI0qY3GXq4tUqFn6OeQKvMuRX69q?usp=sharing).
+   * Copy downloaded directory of "ACDC_dataset" to './data'.
    * The data in the directory "data_ED_ES" have the 3D MR scans at the end diastolic and at the end systolic phases, and their corresponding segmentation labels.
    * The data in the directory "data_ED2ES" have the 4D MR scans from the end diastolic to the end systolic phases, which is used in the test stage.
 
