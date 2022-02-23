@@ -1,0 +1,70 @@
+{
+    "name": "DDM_train",
+    "phase": "train",
+    "gpu_ids": [
+        1
+    ],
+    "display_port": 8097,
+    "path": {
+        "log": "logs",
+        "tb_logger": "tb_logger",
+        "results": "results",
+        "checkpoint": "checkpoint",
+        "resume_state": null
+    },
+    "datasets": {
+        "train": {
+            "name": "Cardiac_MR",
+            "dataroot": "./data/ACDC_dataset/train/",
+            "batch_size": 1,
+            "num_workers": 8,
+            "use_shuffle": true
+        }
+    },
+    "model": {
+        "which_model_G": "ddpm",
+        "finetune_norm": false,
+        "unet": {
+            "in_channel": 3,
+            "out_channel": 1,
+            "inner_channel": 8,
+            "channel_multiplier": [1, 2, 4, 4],
+            "attn_res": [10],
+            "res_blocks": 1,
+            "dropout": 0
+        },
+        "beta_schedule": {
+            "train": {
+                "schedule": "linear",
+                "n_timestep": 2000,
+                "linear_start": 1e-6,
+                "linear_end": 1e-2
+            }
+        },
+        "diffusion": {
+            "image_size": [128, 128, 32],
+            "conditional": true
+        },
+        "field": {
+            "in_channel": 2,
+            "encoder_nc": [16,32,32,32,32],
+            "decoder_nc": [32,32,32,8,8,3]
+        }
+    },
+    "train": {
+        "n_epoch": 800,
+        "save_checkpoint_epoch": 100,
+        "val_freq": 50,
+        "print_freq": 1,
+        "loss_lambda": 20,
+        "optimizer": {
+            "type": "adam",
+            "lr": 1e-4
+        },
+        "ema_scheduler": {
+            "step_start_ema": 5000,
+            "update_ema_every": 1,
+            "ema_decay": 0.9999
+        }
+    }
+}
