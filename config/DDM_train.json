@@ -2,7 +2,7 @@
     "name": "DDM_train",
     "phase": "train",
     "gpu_ids": [
-        1
+        0
     ],
     "display_port": 8097,
     "path": {
@@ -59,7 +59,7 @@
         "loss_lambda": 20,
         "optimizer": {
             "type": "adam",
-            "lr": 1e-4
+            "lr": 2e-4
         },
         "ema_scheduler": {
             "step_start_ema": 5000,
