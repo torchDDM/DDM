@@ -1,5 +1,5 @@
 # Diffusion Deformable Model (DDM)
-
+The official source code of "diffusion deformable model (DDM)".
 
 Implementation
 ===============
@@ -12,7 +12,7 @@ A PyTorch implementation of deep-learning-based model.
 Dataset
 ===============
 * In our experiment, we used 4D cardiac MR scans provided by the Automated Cardiac Diagnosis Challenge (ACDC). 
-* You can download the data at this [link](https://acdc.creatis.insa-lyon.fr/description/databases.html).
+* You can download the data at [ACDC](https://acdc.creatis.insa-lyon.fr/description/databases.html).
 
 Training
 ===============
