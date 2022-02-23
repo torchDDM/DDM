@@ -13,6 +13,7 @@ Dataset
 ===============
 * In our experiment, we used 4D cardiac MR scans provided by the Automated Cardiac Diagnosis Challenge (ACDC). 
 * You can download the data at [ACDC](https://acdc.creatis.insa-lyon.fr/description/databases.html).
+* In our experiment, we resampled all MRI scans with a voxel spacing of $1.5\times 1.5\times 3.15 mm$
 
 Training
 ===============
