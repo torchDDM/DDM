@@ -76,9 +76,6 @@ if __name__ == "__main__":
 
             # validation
             if (istep+1) % opt['train']['val_freq'] == 0:
-                result_path = '{}/{}'.format(opt['path']['results'], current_epoch)
-                os.makedirs(result_path, exist_ok=True)
-
                 diffusion.test(continous=False)
                 visuals = diffusion.get_current_visuals()
                 visualizer.display_current_results(visuals, current_epoch, True)
