@@ -21,13 +21,13 @@ Dataset
 
 Training
 ===============
-* DDM_train.py which is handled by train.sh file.
+* DDM_train.py is the implementation code for training the proposed diffusion deformable model.
 * You can run the code through "sh train.sh" in terminal.
 * All parameter settings we used are written in ./config/DDM_train.json file.
 
 Evaluation
 ===============
-* DDM_test.py which is handled by test.sh file.
+* DDM_test.py is the implementation code of inference for 4D temporal image generation. 
 * You can run the code by running "sh test.sh" in terminal.
 * Chekcpoint of our experiment can be downloaded at [pretrained_model](https://drive.google.com/drive/folders/1fBTqdPXeSaFguXwu0bUOtfYHMTecemmL?usp=sharing).
   * For using our pretrained model, please make a new directory ./pretrained_model and save the model in the directory.
