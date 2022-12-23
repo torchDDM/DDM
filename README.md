@@ -29,11 +29,3 @@ Evaluation
 ===============
 * DDM_test.py is the implementation code of inference for 4D temporal image generation. 
 * You can run the code by running "sh test.sh" in terminal.
-* Chekcpoint of our experiment can be downloaded at [pretrained_model](https://drive.google.com/drive/folders/1fBTqdPXeSaFguXwu0bUOtfYHMTecemmL?usp=sharing).
-  * For using our pretrained model, please make a new directory ./pretrained_model and save the model in the directory.
-  * Results of our experiment
-  
-   | Method | PSNR (dB) | NMSE (x10^(-8)) | Dice | Time (sec) |
-   |--------| ----------| ----------------| -----| -----------|
-   | Initial | 28.058 (2.205) |0.790 (0.516) | 0.642 (0.188) | - |
-   | Ours    | 30.725 (2.579) |0.466 (0.432) | 0.802 (0.109) | 0.456 |
