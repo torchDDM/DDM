@@ -29,3 +29,7 @@ Evaluation
 ===============
 * DDM_test.py is the implementation code of inference for 4D temporal image generation. 
 * You can run the code by running "sh test.sh" in terminal.
+
+Pretrained model
+===============
+You can download our pretrained model at [here](https://drive.google.com/drive/folders/1p4So_O_h03iTSTmeyIvp8KWVfZfUbKzo?usp=sharing).
